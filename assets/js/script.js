@@ -67,14 +67,12 @@ var createTaskActions = function(taskId) {
   editButtonEl.className = "btn edit-btn";
   editButtonEl.setAttribute("data-task-id", taskId);
   actionContainerEl.appendChild(editButtonEl);
-
   // create delete button
   var deleteButtonEl = document.createElement("button");
   deleteButtonEl.textContent = "Delete";
   deleteButtonEl.className = "btn delete-btn";
   deleteButtonEl.setAttribute("data-task-id", taskId);
   actionContainerEl.appendChild(deleteButtonEl);
-  
   // create change status dropdown
   var statusSelectEl = document.createElement("select");
   statusSelectEl.setAttribute("name", "status-change");
